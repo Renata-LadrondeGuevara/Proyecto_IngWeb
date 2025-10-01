@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Administrador - Panel de Comida Mexicana</title>
+  <style>
+    body{
+      margin:0;
+      font-family: Arial, sans-serif;
+      background:#111;
+      color:#eee;
+      line-height:1.6;
+    }
+    header{
+      background:#222;
+      padding:20px;
+      text-align:center;
+      border-bottom:2px solid #333;
+    }
+    header h1{margin:0; color:#ff5f6d}
+    nav{
+      background:#1a1a1a;
+      padding:10px;
+      text-align:center;
+    }
+    nav a{
+      color:#eee;
+      margin:0 15px;
+      text-decoration:none;
+      font-weight:bold;
+      transition:color 0.2s ease;
+    }
+    nav a:hover{color:#ff5f6d}
+    main{padding:20px;}
+    section{margin-bottom:40px;}
+    h2{color:#ff5f6d; margin-bottom:10px}
+    ul{list-style:none; padding:0}
+    ul li{background:#1c1c1c; margin:6px 0; padding:10px; border-radius:8px;}
+    .submenu{margin-left:20px; margin-top:6px;}
+    .submenu li{background:#2a2a2a;}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Panel Administrador</h1>
+  </header>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="#perfil">Perfil</a>
+    <a href="#usuarios">CRUD Usuarios</a>
+    <a href="#productos">CRUD Productos</a>
+    <a href="#reportes">Reportes</a>
+  </nav>
+  <main>
+    <section id="perfil">
+      <h2>Perfil Administrador</h2>
+      <ul>
+        <li>CRUD de usuarios (Administrador / Cliente / Personal de inventarios o Auxiliar)</li>
+        <li>CRUD de productos</li>
+        <li>Reporte de ventas por mes y día</li>
+        <li>Tipo de producto más vendido por mes</li>
+      </ul>
+    </section>
+
+    <section id="usuarios">
+      <h2>Gestión de Usuarios</h2>
+      <ul>
+        <li>Crear, leer, actualizar y eliminar usuarios</li>
+        <li>Roles: Administrador, Cliente, Inventarios/Auxiliar</li>
+      </ul>
+    </section>
+
+    <section id="productos">
+      <h2>Gestión de Productos</h2>
+      <ul>
+        <li>Identificador de producto (uso interno del sistema)</li>
+        <li>Nombre (ejemplo: Eduardo y Renata)</li>
+        <li>Precio</li>
+        <li>Stock: cantidad de unidades. Validar disponibilidad al generar pedidos.</li>
+        <li>Categoría: asignar categoría desde un catálogo.</li>
+        <li>Permitir múltiples imágenes por producto (sin límite)</li>
+        <li>Calificación de producto (0 a 5 estrellas)</li>
+        <li>Recomendaciones: permitir a clientes dejar comentarios</li>
+        <li>Definir estimado de entrega: indicar días o fecha aproximada</li>
+      </ul>
+    </section>
+
+    <section id="reportes">
+      <h2>Reportes de Ventas</h2>
+      <ul>
+        <li>Reporte de ventas por día</li>
+        <li>Reporte de ventas por mes</li>
+        <li>Producto más vendido por mes</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>

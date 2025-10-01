@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cliente - Panel de Comida Mexicana</title>
+  <style>
+    body{
+      margin:0;
+      font-family: Arial, sans-serif;
+      background:#111;
+      color:#eee;
+      line-height:1.6;
+    }
+    header{
+      background:#222;
+      padding:20px;
+      text-align:center;
+      border-bottom:2px solid #333;
+    }
+    header h1{margin:0; color:#06b6d4}
+    nav{
+      background:#1a1a1a;
+      padding:10px;
+      text-align:center;
+    }
+    nav a{
+      color:#eee;
+      margin:0 15px;
+      text-decoration:none;
+      font-weight:bold;
+      transition:color 0.2s ease;
+    }
+    nav a:hover{color:#06b6d4}
+    main{padding:20px;}
+    section{margin-bottom:40px;}
+    h2{color:#06b6d4; margin-bottom:10px}
+    ul{list-style:none; padding:0}
+    ul li{background:#1c1c1c; margin:6px 0; padding:10px; border-radius:8px;}
+    .submenu{margin-left:20px; margin-top:6px;}
+    .submenu li{background:#2a2a2a;}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Panel Cliente</h1>
+  </header>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="#perfil">Perfil</a>
+    <a href="#productos">Productos</a>
+    <a href="#carrito">Carrito</a>
+    <a href="#pedidos">Pedidos</a>
+  </nav>
+  <main>
+    <section id="perfil">
+      <h2>Perfil Cliente</h2>
+      <ul>
+        <li>Autoregistro de usuario con los siguientes datos:
+          <ul class="submenu">
+            <li>Nombre</li>
+            <li>Dirección (permitir múltiples, con: calle, número exterior, número interior, colonia, CP, municipio, ciudad, país)</li>
+            <li>Método de pago (permitir múltiples, con: titular, número tarjeta, mes/año vencimiento, CVV)</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <section id="productos">
+      <h2>Consulta de Productos</h2>
+      <ul>
+        <li>Consultar productos disponibles</li>
+        <li>Filtrar productos por categoría</li>
+      </ul>
+    </section>
+
+    <section id="carrito">
+      <h2>Carrito de Compras</h2>
+      <ul>
+        <li>CRUD productos en el carrito (Agregar, Consultar, Actualizar, Eliminar)</li>
+        <li>Realizar compra:
+          <ul class="submenu">
+            <li>Seleccionar método de pago</li>
+            <li>Seleccionar dirección de envío</li>
+            <li>Confirmar pago y envío</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <section id="pedidos">
+      <h2>Pedidos</h2>
+      <ul>
+        <li>Consultar estatus de pedido</li>
+        <li>Calificar producto (0 a 5 estrellas)</li>
+        <li>Agregar recomendaciones</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
